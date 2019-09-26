@@ -1,0 +1,712 @@
+html {
+	scroll-behavior: smooth;
+}
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}
+
+body {
+	background-image: linear-gradient(to bottom, #c769f0, #ce7cef, #d48fee, #d9a0ec, #deb2eb);
+}
+
+header {
+  /* background-color: #ffe9ec; */
+  background-color: black;
+  /* padding: 170px 0 230px 0; */
+  background-image: url("../img/building.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  cursor: context-menu;
+}
+
+@media only screen
+  /* and (min-device-width: 375px) */
+  and (max-width: 750px) {
+    header {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+    }
+
+}
+
+.mainheader {
+  width: 50%;
+  margin: 0 auto;
+  padding: 8px 0 2px 0;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  background-color: #fff; /* fallback */
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.mainheader:hover {
+  background-color: #fff; /* fallback */
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  cursor: context-menu;
+}
+
+.mainheader:hover span {
+  font-weight: bold;
+  color: black;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+}
+
+@media only screen
+  /* and (min-device-width: 375px) */
+  and (max-width: 750px) {
+    .mainheader {
+      width: 100%;
+      background-color: #fff; /* fallback */
+      background-color: rgba(255, 255, 255, 0.6);
+      font-weight: bold;
+      color: black;
+      margin: 0 0 100px 0;
+    }
+
+    .mainheader span {
+      font-weight: bold;
+      color: black;
+      font-size: 17px;
+      letter-spacing: 1px;
+    }
+
+    .landing {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      height: 600px;
+    }
+
+}
+
+h1 {
+  font-size: 80px;
+  font-family: Galada;
+  letter-spacing: 2.5px;
+  margin-bottom: 100px;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  text-shadow: 0px 2px white;
+}
+
+.mainheader h2 {
+  font-size: 20px;
+  font-family: Quicksand;
+  letter-spacing: 2px;
+  color: white;
+  align-items: center;
+}
+
+#navbar-real {
+  /*background-color:#444 !important;*/
+  background-color: #5B2C6F !important;
+  justify-content: center;
+}
+
+#navbarSupportedContent, a.nav-link {
+  font-family: Quicksand;
+  font-weight: bold;
+  color: white !important;
+}
+
+.navbar-nav > li {
+  font-family: Quicksand;
+  display: flex;
+  padding: 0 10px;
+}
+
+#custom-navbar {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  -webkit-transform: rotate(0deg); transform: rotate(0deg);
+  -webkit-transition: 0.2s ease; transition: 0.2s ease;
+}
+.navbar-toggler .navbar-toggler-icon {
+  -webkit-transform: rotate(90deg); transform: rotate(90deg);
+  outline:none !important;
+}
+
+#nav-gen:focus {
+  color: rgba(0,0,0,.5);
+  border-color: transparent;
+  outline: none;
+}
+
+#nav-gen {
+  color: rgba(0,0,0,.5);
+  border-color: transparent;
+}
+
+.intro {
+  background-color: white;
+  padding: 60px 0;
+  cursor: context-menu;
+}
+
+.bgrnd-row:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: -12px auto; /* This will center the border. */
+  width: 80%; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+  border-bottom: 1px solid #808080; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.designer-cube, .leader-cube {
+  border-left: 1px solid #808080;
+}
+
+@media only screen
+  /* and (min-device-width: 375px) */
+  and (max-width: 990px) {
+    .Designer:before, .Leader:before {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 90%;
+      padding-top: 20px;
+      border-bottom: 1px solid #808080;
+    }
+    .designer-cube, .leader-cube {
+      border-left: 0;
+    }
+    .Leader h2 {
+      margin: 0 -18px;
+    }
+}
+
+.intro h3 {
+  font-size: 20px;
+}
+
+
+.intro img {
+  height: 300px;
+  width: 270px;
+  margin-bottom: 30px;
+}
+
+.background-title {
+  margin: 10px;
+}
+
+.background-content {
+  padding: 20px 0;
+  font-family: Quicksand;
+  background-color: #D2B4DE;
+  /*border-radius: 10px;*/
+  width: 100%;
+  margin: auto;
+}
+
+.header-background {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-background h2 {
+  font-family: Lato;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.fa-background {
+  border-radius: 100%;
+  cursor: default;
+  display: inline-block;
+  height: 2.5em;
+  line-height: 2.5em;
+  margin-right: 20px;
+  width: 2.5em;
+
+  font-size: 20px;
+  background-color: #D04545;
+  color: white;
+}
+
+.resume {
+  font-family: Roboto;
+  color: #dd5d9d;
+  padding: 8px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-color: lightgrey;
+  margin-top: 20px;
+}
+
+.resume:hover, .resume:focus {
+  border-color: #AB666F;
+  background-color: #AB666F;
+  color: white;
+  transition: background-color border-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.section.proj {
+  padding: 50px 0 !important;
+  background-color: #D04545;
+  font-family: Quicksand;
+  cursor: context-menu;
+}
+
+.skill-1 {
+  display: flex;
+  justify-content: center;
+  margin-left: -100px;
+}
+
+.skill-2 {
+  display: flex;
+  justify-content: center;
+}
+
+#skills {
+  display: flex;
+  justify-content: center;
+  /* width: 100%; */
+}
+
+@media only screen
+  and (min-width: 750px)
+  and (max-width: 990px) {
+    #skills {
+        flex-direction: column;
+    }
+
+    .skill-1, .skill-2 {
+      margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #skills {
+        flex-direction: column;
+    }
+
+    .skill-1, .skill-2 {
+      margin: 0 10px;
+    }
+
+    .long-skill {
+      font-size: 15px;
+    }
+
+}
+
+.words{
+  margin:10px;
+}
+
+.words > div {
+  height: 25px;
+  text-align: end;
+  margin: 0 0 10px 0;
+  color: white
+}
+
+.bar {
+  flex-direction: column;
+  width: 70%;
+}
+
+/* whole bar */
+.progress {
+  height: 25px;
+  width: 400px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+    .progress {
+        width: 100%;
+    }
+}
+
+/* bar contents */
+.progress-bar {
+  background-color: #414a4c !important;
+  font-family: Oswald;
+  font-size: 15px;
+  transition: background-color 0.2s ease-out,
+  color 0.2s ease-out;
+}
+
+.progress-bar:hover, .progress-bar:focus {
+  background-color: #fff;
+  color: #4bd3cc;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in,
+  color 0.3s ease-in;
+  cursor: context-menu;
+}
+
+.expertise {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.expertise:hover {
+  cursor: context-menu;
+}
+
+.exp-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen
+  /* and (min-device-width: 375px) */
+  and (max-width: 750px) {
+    .exp-content {
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+    }
+    .progress {
+      width: 80%;
+    }
+}
+
+.expertise p {
+  border: 1px solid;
+  border-radius: 2px;
+  margin: 5px;
+  padding: 5px 15px;
+  background-color: #414a4c;
+  border-color: #FADFE1;
+  color: white;
+}
+
+.prev-proj {
+  padding: 40px 0;
+}
+
+.prev-proj img {
+  width: 100%;
+  height: 100%;
+}
+
+.prev-proj-box {
+  position: relative;
+}
+
+.filter-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 200ms;
+  opacity: 0;
+
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: Cabin;
+  font-weight: bold;
+}
+
+.filter-overlay:hover, .filter-overlay:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+  opacity: 1;
+
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: Cabin;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.filter-overlay h4 {
+    font-family: Cabin;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.filter-overlay h4:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 60%; /* Change this to whatever width you want. */
+  padding: 5px; /* This creates some space between the element and the border. */
+  border-bottom: 2px solid #808080; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.filter-overlay p {
+  font-size: 15px;
+  padding: 0 40px;
+  font-family: Quicksand;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@media only screen
+  /* and (min-device-width: 375px) */
+  and (max-width: 1200px){
+    .filter-overlay  {
+      height: 100%;
+    }
+    .prev-proj img {
+      height: 350px;
+    }
+}
+
+.prev-leadership {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-leadership input {
+  margin: 0 30px;
+}
+
+.logo-leadership {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.asub.leader {
+  border-radius: 150%;
+  width: 85px;
+  height: 85px;
+}
+
+.sase.leader {
+  width: 100px;
+  height: 90px;
+}
+
+.cswn.leader {
+  width: 95px;
+  height: 90px;
+}
+
+.purdue.leader {
+  width: 110px;
+  height: 80px;
+}
+
+@media only screen and (max-width: 750px) {
+  .first-logo-row, .sec-logo-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .asub.leader {
+    margin-bottom: 20px;
+  }
+
+  .cswn.leader {
+    margin-bottom: 30px;
+  }
+
+  .purdue.leader {
+    margin-top: -10px;
+  }
+}
+
+@media only screen
+  /* and (min-device-width: 375px) */
+  and (max-device-width: 750px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .logo-leadership {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .first-logo-row, .sec-logo-row {
+      display: flex;
+      flex-direction: row;
+      margin: 10px 0;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-leadership input {
+      margin: 0 10px;
+    }
+
+    .sase.leader {
+      margin-bottom: 30px;
+    }
+
+    .purdue.leader {
+      margin-top: -20px;
+    }
+}
+
+.content-leadership {
+  margin-top: 20px;
+  background-color: #ffe9ec;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+@media only screen
+  /* and (min-device-width: 375px) */
+  and (max-device-width: 750px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .content-leadership, #asub-content, #sase-content, #cswn-content, #purdue-content  {
+      width: 100%;
+    }
+}
+
+.content-leadership h5 {
+  font-family: Cabin;
+  font-weight: bold;
+  color: #202020;
+  font-size: 20px;
+}
+
+.content-leadership p {
+  margin: 2px 0;
+}
+
+.prev-awards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.prev-awards h6 {
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 20px;
+  color: #F5F5F5;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.prev-awards p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #202020;
+}
+
+.contact {
+  background-color: #ffeec;
+  padding: 30px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h2 {
+  font-family: Cabin;
+  font-size: 25px;
+}
+
+.contact h3 {
+  font-family: Quicksand;
+  font-size: 20px;
+}
+
+.contactlabel {
+  cursor:default;
+  color:#000;
+  text-decoration:none;
+  text-align: center;
+}
+
+/* social media */
+.icons {
+  padding: 10px;
+  font-size: 15px;
+  width: 35px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.icons:hover, .icons:focus {
+  opacity: 0.8;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-link {
+  background: black;
+  color: white;
+}
+
+
+.some-class {
+
+}
+
+/* fonts
+font-family: 'Roboto', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Galada', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Cabin', sans-serif;
+*/
